@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript" src="js/classes/Capitulo.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/classes/Netflix.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/play.js" charset="UTF-8"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+	var nAccount = null;
+</script>
+</head>
+<body onload="cargarDatosIniciales();">
+<div>
+	<form>
+		<p>Nombre: <input type=text id="name" /></p>
+		<p>Nombre Serie: <input type=text id="show" /></p>
+		<p>Temporada: <input type=text id="season" /></p>
+		<p>Posicion: <input type=text id="pos" /></p>
+		<p>Genero: 
+			<select id="genre">
+				<option value="">  </option>
+				<option value="1">Drama</option>
+				<option value="2">Comedia</option>
+				<option value="3">Accion</option>
+				<option value="4">Indie</option>
+				<option value="5">Terror</option>
+				<option value="6">La ostia</option>
+			</select>
+		</p>
+		
+		<p>Duracion: <input type=text id="duration" /></p>
+		<input type=button value="Guardar!" onclick="guardar();" />
+	</form>
+<div>
+<div id="capis"> </div>
+</body>
+</html>
